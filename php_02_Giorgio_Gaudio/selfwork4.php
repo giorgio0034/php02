@@ -3,30 +3,35 @@
 $users = [
   ['name' => 'Davide', 
   'surname' => 'Cariola', 
-  'gender' => 'NB']
+  'gender' => 'NB'],
   
-];
 
 
-$users1=[
 
-  ['name' => 'Marco',
+
+  ['name' => 'Maria',
   'surname'=>'Rossi',
-  'gender'=>'M']
-];
+  'gender'=>'F'],
 
-$users2=[
 
   ['name' => 'Mario',
   'surname'=>'Bianchi',
-  'gender'=>'M']
+  'gender'=>'M'],
+
 ];
 
+foreach ($users as $user) {
+  if($user['gender']=='M'){
+  echo "Buongiorno sign ". $user['name']. " ". $user['surname'] ."\n";
+}elseif($user['gender']=='F'){
+  echo "Buongiorno signora ". $user['name']. " ". $user['surname'] . "\n";
+}else{
+  echo "Buongiorno ". $user['name']. " ". $user['surname'] ."\n";
 
+}
 
-echo "Buongiorno sign ". $users[0]['name']. " ". $users[0]['surname'];
-echo "\nBuongiorno sign ". $users1[0]['name']. " ". $users1[0]['surname'];
-echo "\nBuongiorno sign ". $users2[0]['name']. " ". $users2[0]['surname'];
+}
+
 
 
 
