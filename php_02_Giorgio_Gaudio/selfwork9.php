@@ -70,7 +70,7 @@ class Street extends City {
 
 
      public function getMyCurrentLocation(){
-        echo "Mi trovo in Europa, Italia, Puglia, Ba, Bari, Strada San Giorgio Martire 2D";
+        echo "Mi trovo in $this->nameContinent, $this->nameCountry, $this->nameRegion,  $this->nameProvince, $this->nameCity, $this->nameStreet";
      } 
 
 }
@@ -86,6 +86,7 @@ $mylocation = new Street(
 
 
 $mylocation->getMyCurrentLocation();
+
 
 
 
