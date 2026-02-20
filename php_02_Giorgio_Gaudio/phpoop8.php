@@ -46,7 +46,8 @@ public function perimetro(){
 }
 
 public function diagonale(){
-    return $this->sqr(2*$this->h , + 2*$this->b);
+    return $this->sqr($this->h**2 + $this->b**2);
+   
 }
 
 
